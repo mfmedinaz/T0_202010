@@ -58,8 +58,13 @@ public class ArregloDinamico implements IArregloDinamico {
 		}
 
 		public String darElemento(int i) {
-			// TODO implementar
-			return null;
+			String rta = null;
+			if(i < tamanoMax)
+			{
+			    rta = elementos[i];
+			}
+
+			return rta;
 		}
 
 		public String buscar(String dato) {

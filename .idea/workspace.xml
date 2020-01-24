@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5460aa6d-ec98-43fa-aead-174ea9399f33" name="Default Changelist" comment="" />
+    <list default="true" id="5460aa6d-ec98-43fa-aead-174ea9399f33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/data_structures/ArregloDinamico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/ArregloDinamico.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +22,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -44,5 +48,19 @@
       <updated>1579808760444</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1579899408593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579899408593" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579898627238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579898627238" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579899362954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579899362954" />
   </component>
 </project>
