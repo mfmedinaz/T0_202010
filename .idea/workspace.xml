@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5460aa6d-ec98-43fa-aead-174ea9399f33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/data_structures/ArregloDinamico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/data_structures/ArregloDinamico.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +49,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579901445978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579901445978" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1579899408593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
