@@ -5,9 +5,11 @@ import model.data_structures.IArregloDinamico;
 
 /**
  * Definicion del modelo del mundo
- *
+ * 
+ *  
  */
-public class Modelo {
+
+public class Modelo <T extends Comparable<T>> {
 	/**
 	 * Atributos del modelo del mundo
 	 */
@@ -53,9 +55,9 @@ public class Modelo {
 	 * @param dato Dato a buscar
 	 * @return dato encontrado
 	 */
-	public String buscar(Integer dato)
+	public T buscar(Integer dato)
 	{
-		return datos.buscar(dato);
+		return (T) datos.buscar(dato);
 	}
 	
 	/**
@@ -63,9 +65,9 @@ public class Modelo {
 	 * @param dato Dato a eliminar
 	 * @return dato eliminado
 	 */
-	public String eliminar(Integer dato)
+	public T eliminar(Integer dato)
 	{
-		return datos.eliminar(dato);
+		return (T) datos.eliminar(dato);
 	}
 
 

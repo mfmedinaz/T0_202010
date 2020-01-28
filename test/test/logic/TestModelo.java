@@ -18,7 +18,7 @@ public class TestModelo {
 
 	public void setUp2() {
 		for(int i =0; i< CAPACIDAD;i++){
-			modelo.agregar(""+i);
+			modelo.agregar(i);
 		}
 	}
 
@@ -31,23 +31,42 @@ public class TestModelo {
 	@Test
 	public void testDarTamano() {
 		// TODO
+		setUp2();
+		assertEquals(CAPACIDAD, modelo.darTamano());
+		modelo.agregar(666);
+		assertEquals(CAPACIDAD + 1, modelo.darTamano());
 	}
 
 	@Test
 	public void testAgregar() {
 		// TODO Completar la prueba
+		modelo.agregar(333);
+		modelo.agregar(666);
+		assertEquals(2, modelo.darTamano());
+		assertEquals(modelo.buscar(333), 333);
 	}
-
+	
 	@Test
 	public void testBuscar() {
 		setUp2();
 		// TODO Completar la prueba
+		assertEquals(6, modelo.buscar(6));
+		assertEquals(99, modelo.buscar(99));
+		assertTrue(modelo.buscar(100)==null);
+		
 	}
 
 	@Test
 	public void testEliminar() {
 		setUp2();
-		// TODO Completar la prueba
+		modelo.agregar(3);
+		modelo.agregar(3);
+		assertTrue(modelo.buscar(3)!=null);
+		modelo.eliminar(3);
+		assertTrue(modelo.buscar(3)==null);
+		assertEquals(modelo.darTamano(), 99);
+		
+		
 		
 	}
 

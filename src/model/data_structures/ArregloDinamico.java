@@ -28,7 +28,7 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 	 */
 	public ArregloDinamico( int max )
 	{
-		elementos = new T[max];
+		elementos = (T[]) new Comparable[max];
 		tamanoMax = max;
 		tamanoAct = 0;
 	}
@@ -39,7 +39,7 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 		{  // caso de arreglo lleno (aumentar tamaNo)
 			tamanoMax = 2 * tamanoMax;
 			T [ ] copia = elementos;
-			elementos = new T[tamanoMax];
+			elementos = (T[]) new Comparable[tamanoMax];
 			for ( int i = 0; i < tamanoAct; i++)
 			{
 				elementos[i] = copia[i];
@@ -72,12 +72,13 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 		// TODO implementar
 		// Recomendacion: Usar el criterio de comparacion natural (metodo compareTo()) definido en Strings.
 		T rta = null;
-		for(int i = 0; i < tamanoMax; i++)
+		for(int i = 0; i < tamanoAct; i++)
 		{
-			if(darElemento(i).compareTo(dato) == 0)
+			if(elementos[i].compareTo(dato) == 0)
 			{
 				rta = elementos[i];
 			}
+
 		}
 
 		return rta;
@@ -88,11 +89,12 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 		// Recomendacion: Usar el criterio de comparacion natural (metodo compareTo()) definido en Strings.
 		T rta = null;
 		boolean borrado = false;
-		T [ ] copia = elementos;
-		elementos = new T[tamanoMax];
+		T[] copia = elementos;
+		int iteracionesBorradas = 0;
+		elementos = (T[]) new Comparable[tamanoMax];
 		for ( int i = 0; i < tamanoAct; i++)
 		{
-			if(elementos[i].compareTo(dato) != 0)
+			if(copia[i].compareTo(dato) != 0)
 			{
 				if(borrado==true)
 					elementos[i-1] = copia[i];
@@ -102,8 +104,13 @@ public class ArregloDinamico<T extends Comparable<T>> implements IArregloDinamic
 			else
 			{
 				borrado = true;
-				rta = dato;			
+				rta = dato;	
+				iteracionesBorradas++;
 			}				
+		}
+		if(borrado == true)
+		{
+			tamanoAct -= iteracionesBorradas;
 		}
 		return rta;
 	}
